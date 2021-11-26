@@ -16,9 +16,9 @@ class _UserProfileState extends State<UserProfile> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(
-          height: 150,
-          width: 150,
+          const SizedBox(
+            height: 150,
+            width: 150,
           child:ClipOval(
             child: Image(
               image: AssetImage(AppPath.user_image),
@@ -26,16 +26,14 @@ class _UserProfileState extends State<UserProfile> {
             ),
           ),
           ),
-          SizedBox(height: 20),
-          Container(
-            child: Text(
+          const SizedBox(height: 20),
+          Text(
                 'Hải Nam',
               style: GoogleFonts.roboto(
                 fontSize: 30,
                 fontWeight: FontWeight.w900,
                 color: Colors.black
               ),
-            ),
           ),
           SizedBox(height: 20),
           Container(

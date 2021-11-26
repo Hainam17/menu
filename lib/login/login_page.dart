@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:untitled3/global/app_path.dart';
-import 'package:untitled3/login/reset_pass.dart';
+import 'package:untitled3/login/forgot_pass.dart';
 import 'package:untitled3/login/signUp.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';

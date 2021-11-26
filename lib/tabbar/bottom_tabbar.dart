@@ -31,8 +31,8 @@ class _TaskState extends State<Task> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
             body: PageStorage(
-        bucket: bucket,
-        child: currenScreen,
+              bucket: bucket,
+              child: currenScreen,
         ),
         bottomNavigationBar: BottomAppBar(
           shape: CircularNotchedRectangle(),
