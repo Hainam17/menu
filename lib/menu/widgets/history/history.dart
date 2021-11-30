@@ -58,7 +58,9 @@ class _HistoryState extends State<History> {
                   ]
                 )
               ),
-                isHistory? Row(
+                isHistory?
+                Padding(padding: const EdgeInsets.only(),
+                child:Row(
                     children: [
                       SizedBox(width: 15),
                       TextButton(
@@ -74,8 +76,10 @@ class _HistoryState extends State<History> {
                         ),
                       ))
                   ]
-                  ) :const SizedBox(height: 5),
-                isHistory? Row(
+                  )) :const SizedBox(),
+                isHistory?
+                Padding(padding: const EdgeInsets.only(),
+                child:Row(
                         children: [
                           SizedBox(width: 15),
                           TextButton(
@@ -92,7 +96,7 @@ class _HistoryState extends State<History> {
                               )
                           )
                         ]
-                    ) :const SizedBox(height:0),
+                    )) :const SizedBox(height:0),
             ],
           ),
         )

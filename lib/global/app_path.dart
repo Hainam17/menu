@@ -19,4 +19,8 @@ class AppPath{
   static const String notice_screen ='assets/icons/notice_screen.png';
   static const String setting_screen ='assets/icons/setting_screen.png';
   static const String user_image ='assets/images/user_image.jpg';
+  static const String bao_mat ='assets/svg/bao_mat.svg';
+  static const String dang_tin ='assets/svg/dang_tin.svg';
+  static const String location ='assets/svg/location.svg';
+  static const String thiet_ke ='assets/svg/thiet_ke.svg';
 }

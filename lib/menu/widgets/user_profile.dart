@@ -48,7 +48,8 @@ class _UserProfileState extends State<UserProfile> {
                             'Miễn phí',
                         style: GoogleFonts.roboto(
                           fontSize: 18,
-                          fontWeight: FontWeight.w900
+                          fontWeight: FontWeight.w900,
+                          color: Colors.blue
                         ),
                         ),
                       ),

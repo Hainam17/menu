@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class ReSet extends StatefulWidget {
-  const ReSet({Key? key}) : super(key: key);
+class FoGot extends StatefulWidget {
+  const FoGot({Key? key}) : super(key: key);
 
   @override
-  _ResetState createState() => _ResetState();
+  _FoGotState createState() => _FoGotState();
 }
 
-class _ResetState extends State<ReSet> {
+class _FoGotState extends State<FoGot> {
   @override
   Widget build(BuildContext context) {
     var MyBoder =OutlineInputBorder(

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:untitled3/menu/widgets/account/edit_personal.dart';
+import 'package:untitled3/menu/widgets/account/personal.dart';
+import 'package:untitled3/menu/widgets/account/reset_pass.dart';
 
 class Account extends StatefulWidget {
   const Account({Key? key}) : super(key: key);
@@ -35,10 +38,12 @@ class _AccountState extends State<Account> {
             child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                      padding: const EdgeInsets.only(top: 10),
+                  Padding(
+                      padding: const EdgeInsets.only(top: 12),
                       child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             const SizedBox(width: 20),
                             Icon(
@@ -56,11 +61,15 @@ class _AccountState extends State<Account> {
                           ]
                       )
                   ),
-                  isAccount? Row(
+                  isAccount?
+                  Padding(padding: const EdgeInsets.only(top:0),
+                  child: Row(
                           children: [
                             SizedBox(width: 15),
                             TextButton(
-                                onPressed: (){},
+                                onPressed: (){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Personal()));
+                                },
                                 child: Text(
                                   'Xem trang cá nhân',
                                   style: GoogleFonts.roboto(
@@ -70,13 +79,17 @@ class _AccountState extends State<Account> {
                                   ),
                                 ))
                           ]
-                      )
-                  :const SizedBox(height: 10),
-                  isAccount? Row(
+                      ))
+                  :const SizedBox(),
+                  isAccount?
+                  Padding(padding: const EdgeInsets.only(top:0),
+                  child: Row(
                           children: [
                             SizedBox(width: 15),
                             TextButton(
-                                onPressed: (){},
+                                onPressed: (){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=>EditPersonal()));
+                                },
                                 child: Text(
                                   'Chỉnh sửa thông tin cá nhân',
                                   style: GoogleFonts.roboto(
@@ -86,12 +99,16 @@ class _AccountState extends State<Account> {
                                   ),
                                 ))
                           ]
-                  ):const SizedBox(height: 10),
-                  isAccount? Row(
+                  )):const SizedBox(),
+                  isAccount?
+                  Padding(padding: const EdgeInsets.only(),
+                  child:Row(
                           children: [
                             SizedBox(width: 15),
                             TextButton(
-                                onPressed: (){},
+                                onPressed: (){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ReSet()));
+                                },
                                 child: Text(
                                   'Đổi mật khẩu',
                                   style: GoogleFonts.roboto(
@@ -101,7 +118,7 @@ class _AccountState extends State<Account> {
                                   ),
                                 ))
                           ]
-                  ):const SizedBox(height: 10),
+                  )):const SizedBox(),
                 ],
               ),
             )

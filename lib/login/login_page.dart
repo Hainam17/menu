@@ -179,7 +179,7 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
   void onFoGot(){
-    Navigator.push(context, MaterialPageRoute(builder: (context)=>ReSet())
+    Navigator.push(context, MaterialPageRoute(builder: (context)=>FoGot())
     );
   }
   void onSignUp(){

@@ -57,7 +57,9 @@ class _AppProfileState extends State<AppProfile> {
                           ]
                       )
                   ),
-                  isAppProfile? Row(
+                  isAppProfile?
+                  Padding(padding: const EdgeInsets.only(),
+                  child: Row(
                           children: [
                             SizedBox(width: 15),
                             TextButton(
@@ -71,8 +73,10 @@ class _AppProfileState extends State<AppProfile> {
                                   ),
                                 ))
                           ]
-                      ) :const SizedBox(height: 10),
-                  isAppProfile?  Row(
+                      )):const SizedBox(),
+                  isAppProfile?
+                  Padding(padding: const EdgeInsets.only(),
+                  child:Row(
                           children: [
                             SizedBox(width: 15),
                             TextButton(
@@ -87,8 +91,10 @@ class _AppProfileState extends State<AppProfile> {
                                 )
                             )
                           ]
-                      ) :const SizedBox(height: 10),
-                  isAppProfile? Row(
+                      )):const SizedBox(),
+                  isAppProfile?
+                  Padding(padding: const EdgeInsets.only(),
+                  child:Row(
                           children: [
                             SizedBox(width: 15),
                             TextButton(
@@ -103,8 +109,10 @@ class _AppProfileState extends State<AppProfile> {
                                 )
                             )
                           ]
-                      ):const SizedBox(height: 10),
-                  isAppProfile? Row(
+                      )):const SizedBox(),
+                  isAppProfile?
+                  Padding(padding: const EdgeInsets.only(),
+                  child:Row(
                           children: [
                             SizedBox(width: 15),
                             TextButton(
@@ -119,7 +127,7 @@ class _AppProfileState extends State<AppProfile> {
                                 )
                             )
                           ]
-                      ):const SizedBox(height:0),
+                      )):const SizedBox(height:0),
                 ],
               ),
             )

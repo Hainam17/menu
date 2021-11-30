@@ -70,7 +70,8 @@ class _HelpState extends State<Help> {
                           color: Colors.black,
                         ),
                       ) : const SizedBox(height: 0),
-                  isHelp? Row(
+                  isHelp?Padding(padding: const EdgeInsets.only(),
+                  child:Row(
                           children: [
                             const SizedBox(width: 20),
                             Icon(
@@ -89,8 +90,9 @@ class _HelpState extends State<Help> {
                                   ),
                                 ))
                           ]
-                      ) : const SizedBox(height: 30),
-                  isHelp? Row(
+                      )): const SizedBox(),
+                  isHelp?Padding(padding: const EdgeInsets.only(),
+                  child:Row(
                           children: [
                             const SizedBox(width: 20),
                             Icon(
@@ -110,8 +112,9 @@ class _HelpState extends State<Help> {
                                   ),
                                 ))
                           ]
-                      ) : const SizedBox(height: 30),
-                  isHelp? Row(
+                      )) : const SizedBox(),
+                  isHelp? Padding(padding: const EdgeInsets.only(),
+                  child:Row(
                           children: [
                             SizedBox(width: 20),
                             Icon(
@@ -131,7 +134,7 @@ class _HelpState extends State<Help> {
                                   ),
                                 ))
                           ]
-                      ) :const SizedBox(height: 20),
+                      )):const SizedBox(),
                 ],
               ),
             )
