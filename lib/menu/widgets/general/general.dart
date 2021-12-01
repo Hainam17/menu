@@ -1,6 +1,8 @@
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:untitled3/intro_app/design.dart';
+import 'package:untitled3/intro_app/location.dart';
 
 class General extends StatefulWidget {
   const General({Key? key}) : super(key: key);
@@ -62,7 +64,7 @@ class _GeneralState extends State<General> {
                             SizedBox(width: 15),
                             TextButton(
                                 onPressed: (){
-                                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Design()));
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Location()));
                                 },
                                 child: Text(
                                   'Màn hình giới thiệu',

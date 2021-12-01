@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:untitled3/menu/widgets/app_profile/policy.dart';
+import 'package:untitled3/menu/widgets/app_profile/privacy.dart';
+import 'package:untitled3/menu/widgets/app_profile/profile.dart';
+import 'package:untitled3/menu/widgets/app_profile/termpage.dart';
 
 class AppProfile extends StatefulWidget {
   const AppProfile({Key? key}) : super(key: key);
@@ -63,7 +67,9 @@ class _AppProfileState extends State<AppProfile> {
                           children: [
                             SizedBox(width: 15),
                             TextButton(
-                                onPressed: (){},
+                                onPressed: (){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Profile()));
+                                },
                                 child: Text(
                                   'Thông tin ứng dụng',
                                   style: GoogleFonts.roboto(
@@ -80,7 +86,9 @@ class _AppProfileState extends State<AppProfile> {
                           children: [
                             SizedBox(width: 15),
                             TextButton(
-                                onPressed: (){},
+                                onPressed: (){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Policy()));
+                                },
                                 child: Text(
                                   'Về chúng tôi',
                                   style: GoogleFonts.roboto(
@@ -98,7 +106,9 @@ class _AppProfileState extends State<AppProfile> {
                           children: [
                             SizedBox(width: 15),
                             TextButton(
-                                onPressed: (){},
+                                onPressed: (){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=>TermPage()));
+                                },
                                 child: Text(
                                   'Chính sách và điều khoản',
                                   style: GoogleFonts.roboto(
@@ -116,7 +126,9 @@ class _AppProfileState extends State<AppProfile> {
                           children: [
                             SizedBox(width: 15),
                             TextButton(
-                                onPressed: (){},
+                                onPressed: (){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=>PrivacyPage()));
+                                },
                                 child: Text(
                                   'Quyền riêng tư',
                                   style: GoogleFonts.roboto(
