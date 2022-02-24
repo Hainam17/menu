@@ -261,11 +261,11 @@ class _HomePageState extends State<HomePage> {
                       Image(
                         image: AssetImage(AppPath.transfer),
                       ),
-                      Text('nhà',
-                      style: GoogleFonts.lato(
-                        fontSize: 10
-                      ),
-                      )
+                      // Text('nhà',
+                      // style: GoogleFonts.lato(
+                      //   fontSize: 10
+                      // ),
+                      // )
                     ],
                   ),
                 ),

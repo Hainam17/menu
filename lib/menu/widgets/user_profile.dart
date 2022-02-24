@@ -59,7 +59,7 @@ class _UserProfileState extends State<UserProfile> {
                           'Cấp bậc',
                           style: GoogleFonts.roboto(
                             fontSize: 16,
-                            fontWeight: FontWeight.w100
+                            fontWeight: FontWeight.w300
                           ),
                         ),
                       )
@@ -84,7 +84,7 @@ class _UserProfileState extends State<UserProfile> {
                           'Đã giao',
                           style: GoogleFonts.roboto(
                               fontSize: 16,
-                              fontWeight: FontWeight.w100
+                              fontWeight: FontWeight.w300
                           ),
                         ),
                       )
@@ -109,7 +109,7 @@ class _UserProfileState extends State<UserProfile> {
                           'Đã nhận',
                           style: GoogleFonts.roboto(
                               fontSize: 16,
-                              fontWeight: FontWeight.w100
+                              fontWeight: FontWeight.w300
                           ),
                         ),
                       )
